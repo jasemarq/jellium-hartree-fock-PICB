@@ -1,0 +1,123 @@
+\documentclass[journal=jpclcd,manuscript=suppinfo]{achemso}
+\pdfoutput=1
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{blindtext}
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+% Authors / affiliations
+% Authors in alphabetical order except for corresponding author (JJF), need 
+% to determine if this is the proper order and if we want to have co-first authors!
+
+\author{Jonathan J. Foley IV}
+\affiliation{Department of Chemistry, William Paterson University, 300 Pompton Road, Wayne, NJ, 07470, USA}
+\email{foleyj10@wpunj.edu}
+
+%Title of paper
+\title{Particle in a well model for a nanoparticle coupled to a molecule}
+% Date
+\date{\today}
+
+
+% Being document
+\begin{document}
+
+\section{Introduction}
+Two-electron integrals for particle in a cube:
+
+Each integral is of the form:
+\begin{equation}
+(ab|cd) = \int \frac{ \phi_a(r_1) \phi_b(r_1) \phi_c(r_2) \phi_d(r_2)}{|r_1 - r_2|} dr_1 dr_2
+\end{equation}
+
+where $\phi_a(r_1) =\left(\frac{2}{\pi}\right)^{3/2} {\rm sin}(a_x x_1) {\rm sin}(a_y y_1) {\rm sin}(a_z z_1)$.
+
+Using the trigonometric identity 
+\begin{equation}
+2 {\rm sin}(a_x x_1) {\rm sin}(b_x x_1) = {\rm cos}((a_x - b_x) x_1)  - {\rm cos}((a_x + b_x) x_1)
+\end{equation}
+leads to the realization that the two electron integrals $(ab|cd)$ can be expanded as linear combinations of integrals of the form 
+\begin{equation}
+(p|q) = \frac{1}{\pi^6} \int \frac{{\rm cos}(p_x x_1) {\rm cos}(p_y y_1) {\rm cos}(p_z z_1)  {\rm cos}(q_x x_2) {\rm cos}(q_y y_2) {\rm cos}(q_z z_2) }{|r_1 - r_2|} dr_1 dr_2.
+\end{equation}
+\newpage
+\begin{align*}
+{\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+{\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+\end{align*}
+
+\end{document}
+
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(r_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(p_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(r_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(p_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(p_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(q_x \: x_1) {\rm cos }(r_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // - 
+ {\rm cos}(p_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2) // + 
+ {\rm cos}(q_x \: x_1) {\rm cos }(s_x \: x_2) {\rm cos }(q_y \: y_1) {\rm cos }(s_y \: y_2) {\rm cos }(q_z \: z_1) {\rm cos }(s_z \: z_2)
+\end{align*}
+
+
+%\bibliographystyle{abbrv}
+%\bibliography{main}
+
+\end{document}
